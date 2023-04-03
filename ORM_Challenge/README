@@ -1,0 +1,22 @@
+# 13 ORM Challenge: E-Commerce Back End
+
+## Description
+
+-This project sets-up the backend funcationality for an e-commerce website to perform CRUD operations on data related to their business. 
+
+-MySQL is used to store data, and Sequilize is used to manipulate the data as needed, which can then be viewed through Insomnia.
+
+-GET, POST, PUT and DELETE routes have been created to allow Users to view and edit the data as needed.
+
+## Usage
+
+This application is not deployed live.
+
+### Walkthrough
+[Application Walkthrough](https://drive.google.com/file/d/1dcTdp4c0y6yHS2S4l34GqppYSIGIf3DK/view)
+
+### Credits
+
+[MDN Web Docs](https://developer.mozilla.org/en-US/)
+
+[Sequelize Documentation](https://sequelize.org/)

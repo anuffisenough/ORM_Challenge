@@ -34,7 +34,6 @@ router.get('/:id', async (req, res) => {
 router.post('/', (req, res) => {
   Tag.create({
     tag_name: req.body.tag_name,
-    id: req.body.id
   })
   .then((tag) => {
     res.status(200).json(tag);

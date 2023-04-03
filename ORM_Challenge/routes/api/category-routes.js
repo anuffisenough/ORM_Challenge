@@ -6,7 +6,7 @@ const { Category, Product } = require('../../models');
 router.get('/', async (req, res) => {
   try {
     const categoryData = await Category.findAll({
-      include: [{ model: Product, through: 'category_id' }],
+      include: [{ model: Product}],
     });
     res.status(200).json(categoryData);
   } catch (err) {
@@ -33,7 +33,6 @@ router.get('/:id', async (req, res) => {
 router.post('/', (req, res) => {
   Category.create({
     category_name: req.body.category_name,
-    id: req.body.id
   })
   .then((category) => {
      res.status(200).json(category);
