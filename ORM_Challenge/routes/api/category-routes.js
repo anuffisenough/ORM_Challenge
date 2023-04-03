@@ -37,7 +37,7 @@ router.post('/', (req, res) => {
     id: req.body.id
   })
   .then((category) => {
-     res.status(200).json(tag);
+     res.status(200).json(category);
   })
   .catch((err) => {
     console.log(err);
